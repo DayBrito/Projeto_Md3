@@ -35,8 +35,11 @@ de ensino da Resilia.
 ➔ Após a criação do banco de dados, nossa equipe devera inserir dados para teste do banco de
 dados. Para executar as consultas abaixo e apresentar seus resultados:
 ◆ Selecionar a quantidade total de estudantes cadastrados no banco;
+
 ◆ Selecionar todos os estudantes com os respectivos cursos que eles estão cadastrados;
+
 ◆ Selecionar quais pessoas facilitadoras atuam em mais de uma turma.
+
 ➔ Além disso, vocês deverão pensar em mais três perguntas que deverão ser respondidas através de
 scripts SQL.
 
