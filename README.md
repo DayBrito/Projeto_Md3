@@ -20,10 +20,15 @@ vezes a extração de dados estratégicos para a empresa.
 
 ### **Objetivo**
 A partir desta apresentação do problema, nossa equipe deve:
+
 ◆ Gerar uma representação das entidades e seus respectivos atributos;
+
 ◆ Criar a modelagem do banco de dados;
+
 ◆ Criar os scripts SQL para criação das tabelas com seus respectivos atributos e com a base de
+
 dados criadas;
+
 ◆ Inserir alguns dados, executar algumas consultas para gerar informações estratégicas para a área
 de ensino da Resilia.
 
