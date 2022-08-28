@@ -1,6 +1,6 @@
 # ProjetoMod3
 Banco de dados da Resilia . . . 
-@@ -1,10 +1,10 @@
+
 # Projeto do Módulo 3 - Data Analytics (Turma 20) Resilia
 ## Índice
 **===============**
