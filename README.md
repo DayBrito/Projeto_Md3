@@ -60,8 +60,7 @@ scripts SQL.
 ### **Rodando a aplicação**
 ```bash
 # Clone este repositório
-$ git clone <[git@github.com]mailto:git@github.com):DayBrito/Projeto_Md3>
-$ git clone <[git@github.com]mailto:git@github.com):DayBrito/Projeto_Md3>
+$ git clone <https://github.com/DayBrito/Projeto_Md3.git>
 # Acesse a pasta do projeto.
 # Certifique-se que os arquivos estejam na mesma pasta.
 # Abra no PGadmin e rode o arquivo.
