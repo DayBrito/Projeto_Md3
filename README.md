@@ -2,6 +2,9 @@
 Banco de dados da Resilia . . . 
 
 # Projeto do Módulo 3 - Data Analytics (Turma 20) Resilia
+
+![image](https://user-images.githubusercontent.com/106848389/180666234-915735fb-ebe4-4d95-80d0-470a129a5fab.png)
+
 ## Índice
 **===============**
 - [Qual o desafio?](#qual-o-desafio) 🚨
