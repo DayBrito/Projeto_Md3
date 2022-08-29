@@ -99,3 +99,23 @@ ALTER TABLE "turma" ADD FOREIGN KEY ("id_curso_fk8") REFERENCES "cursos" ("id_cu
 ALTER TABLE "turma" ADD FOREIGN KEY ("id_modulo_developer_fk") REFERENCES "modulos_developer" ("id_modulo_developer");
 
 ALTER TABLE "turma" ADD FOREIGN KEY ("id_modulo_data_science_fk") REFERENCES "modulos_data" ("id_modulo_data_science");
+
+-- Alimentar tabela (departamento)
+INSERT INTO departamentos (id_departamento, tipo_de_departamento) values (1, 'Soft Skills');
+INSERT INTO departamentos (id_departamento, tipo_de_departamento) values (2, 'Hard Skills');
+
+
+-- Alimentar tabela (facilitadores)
+
+INSERT INTO facilitadores (id_facilitador, id_departamento_fk, 
+                           nome_facilitador, matricula_facilitador) values (1, 1, 'Esli', 202241);
+INSERT INTO facilitadores (id_facilitador, id_departamento_fk, 
+                           nome_facilitador, matricula_facilitador) values (2, 2, 'Marisa', 202250);
+INSERT INTO facilitadores (id_facilitador, id_departamento_fk, 
+                           nome_facilitador, matricula_facilitador) values (3, 2, 'Dayson', 202281);
+INSERT INTO facilitadores (id_facilitador, id_departamento_fk, 
+                           nome_facilitador, matricula_facilitador) values (4, 2, 'Rafael', 202271);
+INSERT INTO facilitadores (id_facilitador, id_departamento_fk, 
+                           nome_facilitador, matricula_facilitador) values (5, 1, 'Yasmin', 2022101);
+INSERT INTO facilitadores (id_facilitador, id_departamento_fk, 
+                           nome_facilitador, matricula_facilitador) values (6, 2, NULL, NULL);
