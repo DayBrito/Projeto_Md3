@@ -359,3 +359,21 @@ INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_
 INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
     values (80,'Milena Cunha',32,'SC',080,2,4);
 
+-- CONSULTAS (SELECIONAR A QUANTIDADE TOTAL DE ESTUDANTES CADASTRADOS NO BANCOO ) 
+
+SELECT  COUNT(nome_do_aluno)
+FROM aluno;
+
+-- CONSULTAS (SELECIONAR TODOS OS ESTUDANTES COM OS RESPECTIVOS CURSOS QUE ELES ESTÃO CADASTRADOS )
+-- DADOS 
+SELECT * 
+FROM aluno
+WHERE id_curso_fk2 = 1;
+
+-- CONSULTAS (SELECIONAR TODOS OS ESTUDANTES COM OS RESPECTIVOS CURSOS QUE ELES ESTÃO CADASTRADOS )
+-- WEB DEV
+
+SELECT * 
+FROM aluno
+WHERE id_curso_fk2 = 2
+
