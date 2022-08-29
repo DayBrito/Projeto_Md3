@@ -169,8 +169,7 @@ INSERT INTO modulos_developer (id_modulo_developer, conteudo_hard_skills,
                                                       bibliotecas de estilização mais utilizadas no mercado.', 'Conhecer seus objetivos pessoais e de carreira, aofinal da jornada você se preparar para processos
                                                       seletivos de Desenvolvedor Jr e encontrar sua empresa.', 9, 8, 2, 20);
 
---INSERIR OS DADOS NA TABELA TURMA E ALUNOS--
--- Alimentando tabela(turma)
+--INSERIR OS DADOS NA TABELA TURMA--
 
 INSERT INTO turma (id_turma,id_facilitador_soft,id_facilitador_tech,
                    id_curso_fk8,id_modulo_developer_fk,id_modulo_data_science_fk)
@@ -187,9 +186,7 @@ INSERT INTO turma (id_turma,id_facilitador_soft,id_facilitador_tech,
                   id_curso_fk8,id_modulo_developer_fk,id_modulo_data_science_fk)
        values (4,1,3,2,4,null);
 
-
--- Alimentando tabela (alunos) TURMA 01 DADOS 
-
+--INSERIR OS DADOS NA TABELA ALUNOS - TURMA 01 DADOS --
 INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
     values (1,'Antonio Carlos',31,'SP',001,1,1);
 INSERT INTO aluno(id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
@@ -231,8 +228,7 @@ INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_
 INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
     values (20,'Daniela Vieira',32,'SC',020,1,1);
 
---Alimentando tabela (alunos) TURMA 02 DADOS
-
+--INSERIR OS DADOS NA TABELA ALUNOS - TURMA 02 DADOS --
 INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
     values (21,'Maria Fernanda Fogaça',31,'SP',021,1,2);
 INSERT INTO aluno(id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
@@ -274,7 +270,7 @@ INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_
 INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
     values (40,'Rafaela Peixoto',32,'SC',040,1,2);
 
--- Alimentando tabela (alunos) TURMA 03 WEB DEV
+--INSERIR OS DADOS NA TABELA ALUNOS - TURMA 03 WEB DEV --
 INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
     values (41,'Nathan Fogaça',31,'SP',041,2,3);
 INSERT INTO aluno(id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
@@ -316,8 +312,7 @@ INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_
 INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
     values (60,'Lívia Aragão',32,'SC',060,2,3);
 
--- Alimentando tabela (alunos) TURMA 04 WEB DEV
-
+--INSERIR OS DADOS NA TABELA ALUNOS - TURMA 04 WEB DEV --
 INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
     values (61,'Rebeca Porto',31,'SP',061,2,4);
 INSERT INTO aluno(id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
@@ -359,20 +354,18 @@ INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_
 INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
     values (80,'Milena Cunha',32,'SC',080,2,4);
 
--- CONSULTAS (SELECIONAR A QUANTIDADE TOTAL DE ESTUDANTES CADASTRADOS NO BANCOO ) 
-
+-- CONSULTAS (SELECIONAR A QUANTIDADE TOTAL DE ESTUDANTES CADASTRADOS NO BANCO) 
 SELECT  COUNT(nome_do_aluno)
 FROM aluno;
 
--- CONSULTAS (SELECIONAR TODOS OS ESTUDANTES COM OS RESPECTIVOS CURSOS QUE ELES ESTÃO CADASTRADOS )
+-- CONSULTAS (SELECIONAR TODOS OS ESTUDANTES COM OS RESPECTIVOS CURSOS QUE ELES ESTÃO CADASTRADOS)
 -- DADOS 
 SELECT * 
 FROM aluno
 WHERE id_curso_fk2 = 1;
 
--- CONSULTAS (SELECIONAR TODOS OS ESTUDANTES COM OS RESPECTIVOS CURSOS QUE ELES ESTÃO CADASTRADOS )
+-- CONSULTAS (SELECIONAR TODOS OS ESTUDANTES COM OS RESPECTIVOS CURSOS QUE ELES ESTÃO CADASTRADOS)
 -- WEB DEV
-
 SELECT * 
 FROM aluno
 WHERE id_curso_fk2 = 2
