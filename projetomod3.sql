@@ -105,7 +105,7 @@ INSERT INTO departamentos (id_departamento, tipo_de_departamento) values (2, 'Ha
 --INSERINDO DADOS NA TABELA FACILITADOES--
 INSERT INTO facilitadores (id_facilitador, id_departamento_fk, 
                            nome_facilitador, matricula_facilitador) values (1, 1, 'Esli', 202241),
-                                                                           (2, 2, 'Marisa', 202250)
+                                                                           (2, 2, 'Marisa', 202250),
                                                                            (3, 2, 'Dayson', 202281),
                                                                            (4, 2, 'Rafael', 202271),
                                                                            (5, 2, 'Guilherme', 2022101),
@@ -353,6 +353,16 @@ INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_
     values (79,'Samuel Vieira',28,'RN',079,2,4);
 INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
     values (80,'Milena Cunha',32,'SC',080,2,4);
+    
+--CONSULTAS TABELAS--
+SELECT * FROM facilitadores;
+SELECT * FROM aluno;
+SELECT * FROM cadastro;
+SELECT * FROM cursos;
+SELECT * FROM departamentos;
+SELECT * FROM modulos_data;
+SELECT * FROM modulos_developer;
+SELECT * FROM turma;
 
 -- CONSULTAS (SELECIONAR A QUANTIDADE TOTAL DE ESTUDANTES CADASTRADOS NO BANCO) 
 SELECT  COUNT(nome_do_aluno)
@@ -369,4 +379,14 @@ WHERE id_curso_fk2 = 1;
 SELECT * 
 FROM aluno
 WHERE id_curso_fk2 = 2
+
+--CONSULTAS (REALIZANDO O AGRUPAMENTO DA QUANTIDADE DE ALUNOS POR ESTADO)
+SELECT estado_do_aluno, 
+COUNT(*) AS total_por_estado FROM aluno 
+GROUP BY estado_do_aluno order by total_por_estado desc;
+
+--CONSULTAS (JUNÇÃO DE DUAS TABELAS PARA APRESENTAR EM QUAIS CURSOS OS ALUNOS ESTÃO INSCRITOS)
+select cursos.curso, aluno.nome_do_aluno from aluno
+inner join cursos
+on cursos.id_curso = aluno.id_curso_fk2
 
