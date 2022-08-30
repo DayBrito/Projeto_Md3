@@ -354,6 +354,170 @@ INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_
 INSERT INTO aluno (id_aluno,nome_do_aluno,idade_aluno,estado_do_aluno,matricula_aluno,id_curso_fk2,id_turma_fk)
     values (80,'Milena Cunha',32,'SC',080,2,4);
     
+-- Alimentando tabela (Cadastro)
+
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (101,1,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (102,2,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (103,3,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (104,4,2,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (105,5,2,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (106,6,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (107,7,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (108,8,2,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (109,9,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (110,10,2,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (111,11,2,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (112,12,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (113,13,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (114,14,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (115,15,2,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (116,16,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (117,17,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (118,18,2,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (119,19,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (120,20,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (121,21,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (122,22,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (123,23,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (124,24,2,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (125,25,2,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (126,26,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (127,27,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (128,28,2,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (129,29,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (130,30,2,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (131,31,2,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (132,32,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (133,33,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (134,34,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (135,35,2,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (136,36,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (137,37,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (138,38,2,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (139,39,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (140,40,1,1);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (141,41,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (142,42,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (143,43,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (144,44,2,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (145,45,2,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (146,46,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (147,47,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (148,48,2,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (149,49,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (150,50,2,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (151,51,2,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (152,52,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (153,53,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (154,54,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (155,55,2,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (156,56,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (157,57,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (158,58,2,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (159,59,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (160,60,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (161,61,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (162,62,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (163,63,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (164,64,2,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (165,65,2,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (166,66,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (167,67,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (168,68,2,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (169,69,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (170,70,2,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (171,71,2,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (172,72,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (173,73,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (174,74,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (175,75,2,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (176,76,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (177,77,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (178,78,2,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (179,79,1,2);
+INSERT INTO cadastro (id_cadastro,id_aluno_fk,id_facilitador_fk,id_curso_fk3)
+    values (180,80,1,2);
+
+    
 --CONSULTAS TABELAS--
 SELECT * FROM facilitadores;
 SELECT * FROM aluno;
