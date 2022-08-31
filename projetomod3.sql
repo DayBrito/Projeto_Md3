@@ -558,3 +558,28 @@ on cursos.id_curso = aluno.id_curso_fk2
 
 ALTER TABLE aluno add column genero varchar;
 ALTER TABLE aluno add column trabalho bool;
+
+-- Preenchendo as novas colunas
+
+UPDATE aluno set genero = 'Masculino' where id_aluno = 1,
+UPDATE aluno set trabalho = '0' where id_aluno = 1;
+
+UPDATE aluno set 
+genero = 'Feminino',
+trabalho = '1'
+where id_aluno = 2;
+
+UPDATE aluno set 
+genero = 'Masculino',
+trabalho = '1'
+where id_aluno = 3;
+
+
+update aluno set genero= 'Masculino' where id_aluno IN (9,11,13,15,16);
+update aluno set genero = 'Feminino' where id_aluno IN (4,5,7,9,10,12,14,20)
+update aluno set genero = 'Outros' where id_aluno IN (6,8,17,18,19)
+
+update aluno set trabalho = '0' where id_aluno IN (4,9,20,7,11,20,12,14,15,16,18)
+update aluno set trabalho = '1' where id_aluno IN (5,6,19,17,7,10,8,13)
+
+
