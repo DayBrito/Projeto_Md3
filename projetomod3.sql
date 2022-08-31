@@ -574,12 +574,20 @@ genero = 'Masculino',
 trabalho = '1'
 where id_aluno = 3;
 
-
 update aluno set genero= 'Masculino' where id_aluno IN (9,11,13,15,16);
 update aluno set genero = 'Feminino' where id_aluno IN (4,5,7,9,10,12,14,20)
 update aluno set genero = 'Outros' where id_aluno IN (6,8,17,18,19)
 
-update aluno set trabalho = '0' where id_aluno IN (4,9,20,7,11,20,12,14,15,16,18)
-update aluno set trabalho = '1' where id_aluno IN (5,6,19,17,7,10,8,13)
+update aluno set genero= 'Masculino' where id_aluno IN (23, 24,25,28,31,38,41,44,49);
+update aluno set genero = 'Feminino' where id_aluno IN (21,22,26,30,32,35,36,42,46,47,48,51);
+update aluno set genero = 'Outros' where id_aluno IN (27,29,33,34,37,39,40,43,45,50);
+
+update aluno set genero= 'Masculino' where id_aluno IN (5,56,57,63,64,66,71,72,74,75,79);
+update aluno set genero = 'Feminino' where id_aluno IN (52,53,54,59,61,62,67,73,76,77);
+update aluno set genero = 'Outros' where id_aluno IN (58,60,65,68,69,70,78,80);
+
+update aluno set trabalho = '0' where id_aluno IN (4,9,20,7,11,20,12,14,15,16,18);
+update aluno set trabalho = '1' where id_aluno IN (5,6,19,17,7,10,8,13);
+
 
 
