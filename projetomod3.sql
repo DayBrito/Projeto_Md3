@@ -590,4 +590,9 @@ update aluno set trabalho = '0' where id_aluno IN (4,9,20,7,11,20,12,14,15,16,18
 update aluno set trabalho = '1' where id_aluno IN (5,6,19,17,7,10,8,13);
 
 
+update aluno set trabalho = '0' where id_aluno IN (4,9,20,7,11,20,12,14,15,16,18);
+update aluno set trabalho = '1' where id_aluno IN (5,6,19,17,7,10,8,13);
+update aluno set trabalho = '1' where id_aluno IN (45,46,50,52,53,71,74,75,78,79,64,60,54,65,72,77,22,24,26,28,30,31);
+update aluno set trabalho = '0' where id_aluno IN (80,73,62,67,70,47,48,51,57,68,41,44,49,55,56,58,63,66,69,59,76,40,42,43,61,21,23,25,27,29,32,33,34,35,36,37,38,39,40);
+
 
