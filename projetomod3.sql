@@ -554,3 +554,7 @@ select cursos.curso, aluno.nome_do_aluno from aluno
 inner join cursos
 on cursos.id_curso = aluno.id_curso_fk2
 
+--ADICIONANDO NOVAS INFOS EM ALUNO
+
+ALTER TABLE aluno add column genero varchar;
+ALTER TABLE aluno add column trabalho bool;
