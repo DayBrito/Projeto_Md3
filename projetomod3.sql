@@ -614,28 +614,32 @@ select facilitadores.nome_facilitador, id_facilitador_hard_fk, count(id_facilita
 from modulos_data
 inner join facilitadores
 on facilitadores.id_facilitador = modulos_data.id_facilitador_hard_fk
-group by nome_facilitador, id_facilitador_hard_fk;
+group by nome_facilitador, id_facilitador_hard_fk
+having count(id_facilitador_hard_fk) > 1;
 
 ----FACILITADOR SOFT SKILLS --DATA SCIENCE
 select facilitadores.nome_facilitador, id_facilitador_soft_fk, count(id_facilitador_soft_fk)
 from modulos_data
 inner join facilitadores
 on facilitadores.id_facilitador = modulos_data.id_facilitador_soft_fk
-group by nome_facilitador, id_facilitador_soft_fk;
+group by nome_facilitador, id_facilitador_soft_fk
+having count(id_facilitador_soft_fk) > 1;
 
 ----FACILITADOR SOFT SKILLS --WEB DEVELOPER
 select facilitadores.nome_facilitador, id_facilitador_soft_fk, count(id_facilitador_soft_fk)
 from modulos_developer
 inner join facilitadores
 on facilitadores.id_facilitador = modulos_developer.id_facilitador_soft_fk
-group by nome_facilitador, id_facilitador_soft_fk;
+group by nome_facilitador, id_facilitador_soft_fk
+having count(id_facilitador_soft_fk) > 1;
 
 ----FACILITADOR HARD SKILLS --WEB DEVELOPER
 select facilitadores.nome_facilitador, id_facilitador_hard_fk, count(id_facilitador_hard_fk)
 from modulos_developer
 inner join facilitadores
 on facilitadores.id_facilitador = modulos_developer.id_facilitador_hard_fk
-group by nome_facilitador, id_facilitador_hard_fk;
+group by nome_facilitador, id_facilitador_hard_fk
+having count(id_facilitador_hard_fk) > 1;
 
 
 -- 6 CONSULTA: SELECIONAR QUAIS ALUNOS DO CURSO DE DADOS ESTÃO ACIMA DA MÉDIA DE IDADE
