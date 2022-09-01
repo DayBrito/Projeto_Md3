@@ -570,6 +570,10 @@ update aluno set trabalho = '1' where id_aluno IN (5,6,19,17,7,10,8,13);
 update aluno set trabalho = '1' where id_aluno IN (45,46,50,52,53,71,74,75,78,79,64,60,54,65,72,77,22,24,26,28,30,31);
 update aluno set trabalho = '0' where id_aluno IN (80,73,62,67,70,47,48,51,57,68,41,44,49,55,56,58,63,66,69,59,76,40,42,43,61,21,23,25,27,29,32,33,34,35,36,37,38,39,40);
 
+UPDATE modulos_data SET id_facilitador_hard_fk = 2 where id_modulo_data_science in (4,5,6);
+UPDATE modulos_data SET id_facilitador_soft_fk = 1 where id_modulo_data_science in (4);
+UPDATE modulos_data SET id_facilitador_soft_fk = 5 where id_modulo_data_science in (5,6);
+
 
 
 -- 1 CONSULTA: SELECIONAR A QUANTIDADE TOTAL DE ESTUDANTES CADASTRADOS NO BANCO 
@@ -605,6 +609,33 @@ select * from aluno where genero = 'Feminino'
 and trabalho !='0';
 
 -- 5 CONSULTA: SELECIONAR QUAIS FACILITADORES ATUAM EM MAIS DE UMA TURMA
+--FACILITADOR HARD SKILLS --DATA SCIENCE
+select facilitadores.nome_facilitador, id_facilitador_hard_fk, count(id_facilitador_hard_fk)
+from modulos_data
+inner join facilitadores
+on facilitadores.id_facilitador = modulos_data.id_facilitador_hard_fk
+group by nome_facilitador, id_facilitador_hard_fk;
+
+----FACILITADOR SOFT SKILLS --DATA SCIENCE
+select facilitadores.nome_facilitador, id_facilitador_soft_fk, count(id_facilitador_soft_fk)
+from modulos_data
+inner join facilitadores
+on facilitadores.id_facilitador = modulos_data.id_facilitador_soft_fk
+group by nome_facilitador, id_facilitador_soft_fk;
+
+----FACILITADOR SOFT SKILLS --WEB DEVELOPER
+select facilitadores.nome_facilitador, id_facilitador_soft_fk, count(id_facilitador_soft_fk)
+from modulos_developer
+inner join facilitadores
+on facilitadores.id_facilitador = modulos_developer.id_facilitador_soft_fk
+group by nome_facilitador, id_facilitador_soft_fk;
+
+----FACILITADOR HARD SKILLS --WEB DEVELOPER
+select facilitadores.nome_facilitador, id_facilitador_hard_fk, count(id_facilitador_hard_fk)
+from modulos_developer
+inner join facilitadores
+on facilitadores.id_facilitador = modulos_developer.id_facilitador_hard_fk
+group by nome_facilitador, id_facilitador_hard_fk;
 
 
 -- 6 CONSULTA: SELECIONAR QUAIS ALUNOS DO CURSO DE DADOS ESTÃO ACIMA DA MÉDIA DE IDADE
