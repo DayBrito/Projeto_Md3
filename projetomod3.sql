@@ -607,5 +607,8 @@ and trabalho !='0';
 -- 5 CONSULTA: SELECIONAR QUAIS FACILITADORES ATUAM EM MAIS DE UMA TURMA
 
 
--- 
+-- 6 CONSULTA: SELECIONAR QUAIS ALUNOS DO CURSO DE DADOS ESTÃO ACIMA DA MÉDIA 
 
+SELECT nome_do_aluno, idade_aluno FROM aluno
+WHERE idade_aluno > (select avg(idade_aluno) from aluno)
+AND  id_curso_fk2 =1;
